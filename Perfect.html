@@ -1,0 +1,53 @@
+<html> 
+  
+<head> 
+    <title> 
+        Check a number is perfect or 
+        not using JavaScript 
+    </title> 
+      
+    <script type="text/javascript"> 
+    
+        function p() { 
+              
+            var n, i, s; 
+              
+            // Getting the value form text 
+            // field using DOM 
+            n = document.myform.n.value; 
+            n = parseInt(n) 
+            s=0;
+            for(i = 1; i <= n/2; i++) 
+                if (n % i == 0) 
+               s = s+i;
+                  
+                // Check and display alert message 
+            if (s==n) 
+                alert(n + " is perfect"); 
+            else
+                alert(n + " is not perfect"); 
+        } 
+    </script> 
+</head> 
+  
+<body> 
+    <center> 
+        <h1>Aparnaa</h1> 
+          
+        <h4>check number is perfect or not</h4> 
+          
+        <hr color="Green"> 
+          
+        <form name="myform"> 
+            Enter the number: 
+            <input type="text" name=n value=""> 
+              
+            <br><br> 
+              
+            <input type="button" value="Check" onClick="p()"> 
+            <br> 
+        </form> 
+    </center> 
+</body> 
+  
+</html> 
